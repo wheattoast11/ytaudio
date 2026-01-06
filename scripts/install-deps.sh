@@ -79,11 +79,10 @@ packages=(
     "torch>=2.0.0"
     "audiosr==0.0.7"
     "onnxruntime>=1.16.0"
-    "librosa>=0.10.0"
     "soundfile>=0.12.0"
     "huggingface-hub>=0.20.0"
-    "numpy>=1.24.0"
 )
+# Note: audiosr pins librosa==0.9.2 and numpy<=1.23.5 - don't override
 
 for package in "${packages[@]}"; do
     name=$(echo "$package" | cut -d'>' -f1 | cut -d'=' -f1)

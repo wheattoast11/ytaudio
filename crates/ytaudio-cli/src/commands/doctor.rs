@@ -150,14 +150,12 @@ pub async fn run() -> Result<()> {
                     }
                     Err(_) => {
                         println!("FOUND but failed to get version");
-                        all_ok = false;
                     }
                 }
             }
             Err(_) => {
                 println!("NOT FOUND");
                 println!("           Install with: brew install python@3.11");
-                all_ok = false;
             }
         }
         all_ok = false;

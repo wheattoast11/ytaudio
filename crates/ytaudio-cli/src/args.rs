@@ -128,6 +128,7 @@ pub enum OutputFormat {
 }
 
 impl OutputFormat {
+    #[allow(dead_code)]
     pub fn extension(&self) -> &'static str {
         match self {
             OutputFormat::Flac => "flac",

@@ -2,7 +2,7 @@
 
 use crate::error::DownloadError;
 use serde::Deserialize;
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 use tokio::process::Command;
 use tracing::{debug, info};
 
