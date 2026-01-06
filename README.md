@@ -13,25 +13,38 @@ A powerful CLI for extracting high-quality audio from YouTube with neural upscal
 
 ## Installation
 
-### Prerequisites
+### Quick Start
+
+1. Install dependencies:
+```bash
+./scripts/install-deps.sh
+```
+
+2. Build ytaudio:
+```bash
+cargo build --release
+```
+
+3. Verify everything works:
+```bash
+./target/release/ytaudio doctor
+```
+
+That's it! The script automatically installs yt-dlp, ffmpeg, Python packages, and neural models.
+
+### Manual Installation
+
+If you prefer to install dependencies yourself:
 
 ```bash
-# Install system dependencies
+# Install system tools (macOS)
 brew install yt-dlp ffmpeg
 
 # Build ytaudio
 cargo build --release
 
-# Set up Python environment and neural models
-./scripts/install-deps.sh
-# or
+# Set up Python and models
 ./target/release/ytaudio update-models
-```
-
-### Verify installation
-
-```bash
-./target/release/ytaudio doctor
 ```
 
 ## Usage
