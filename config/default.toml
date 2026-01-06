@@ -1,0 +1,35 @@
+# ytaudio default configuration
+# Copy to ~/.config/ytaudio/config.toml to customize
+
+[paths]
+# External dependencies (auto-detected if not set)
+# yt_dlp = "/opt/homebrew/bin/yt-dlp"
+# ffmpeg = "/opt/homebrew/bin/ffmpeg"
+# python = "/opt/homebrew/bin/python3"
+
+[output]
+default_format = "flac"
+default_directory = "."
+
+[upscale]
+# "fast" (FlashSR) or "best" (AudioSR)
+default_quality = "fast"
+
+[upscale.audiosr]
+ddim_steps = 50
+guidance_scale = 3.5
+model = "basic"  # "basic" or "speech"
+
+[normalize]
+enabled = false
+target_lufs = -14.0
+true_peak = -1.0
+lra = 11.0
+
+[batch]
+max_parallel = 4
+continue_on_error = true
+
+[temp]
+cleanup = true
+# directory = "/tmp/ytaudio"

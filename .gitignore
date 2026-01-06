@@ -1,0 +1,43 @@
+# Build artifacts
+/target/
+**/*.rs.bk
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+*.egg-info/
+
+# Temp files
+*.tmp
+*.temp
+
+# Output files (don't commit downloaded audio)
+*.flac
+*.wav
+*.mp3
+*.m4a
+*.opus
+*.aac
+
+# Thumbnails
+*.jpg
+*.png
+*.webp
+
+# yt-dlp info files
+*.info.json
